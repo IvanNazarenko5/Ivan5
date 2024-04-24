@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Объем куба</title>
+</head>
+<body>
+<h3>Вычисление объема куба</h3>
+<input type="text" name="" placeholder="Введите длину ребра" id="side">
+<p>Объем куба: </p>
+<input type="text" name="" id="squareArea"><br><br>
+
+</body>
+<script type="text/javascript">
+let side = document.getElementById('side');
+let squareArea = document.getElementById('squareArea');
+
+side.addEventListener('blur', function() {
+squareArea.value = Math.pow(side.value, 3);
+});
+</script>
+</html>
